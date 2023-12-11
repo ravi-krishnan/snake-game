@@ -1,0 +1,70 @@
+body{
+
+    height: 100vh;
+    background-color: rgb(50, 49, 50);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.scores{
+    color :aliceblue;
+    font-size: 19px;
+    font-weight: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px 10px 10px 10px; */
+}
+.game{
+    /* position: absolute;
+    top: 30%;
+    left: 40%; */
+
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.game-border-1{
+
+    border: 20px solid rgb(4, 94, 4);
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px rgb(4, 94, 4)
+    
+}
+.game-border-2{
+    border: 20px solid rgba(21, 173, 21, 0.786);
+    border-radius: 28px;
+    /* box-shadow: inset 0 0 0 10px rgba(21, 173, 21, 0.786); */
+}
+
+.game-board{
+    margin: 0;
+    padding: 2px;
+    border: 2px solid rgba(125, 180, 139, 0.944);
+    background-color: rgba(46, 163, 77, 0.638);
+    display: grid;
+    grid-template-columns: repeat(20,20px);
+    grid-template-rows: repeat(20,20px);
+    /* box-shadow: inset 0 0 0 10px rgb(4, 94, 4) */
+}
+.snake{
+    /* color: black; */
+    grid-template-columns: repeat(20,20px);
+    grid-template-rows: repeat(20,20px);
+    /* background-color: black; */
+    display: grid;
+}
+.snake-body{
+    background-color: black;
+    display: grid;
+}
+
+
+.food{
+    background-color: white;
+    display: grid;
+}
