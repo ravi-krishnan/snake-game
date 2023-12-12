@@ -1,6 +1,6 @@
 # Snake Game
 
-A basic snake game using js+html
+A snake game using js+html
 
 
 ## Reference
