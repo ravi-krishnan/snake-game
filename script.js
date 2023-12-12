@@ -11,9 +11,9 @@ function createElement(tag,className){
 
 
 function startGame(){
-
+    document.getElementById('curr-score').textContent = 0
     game_started=1
-
+    direction = 'right'
     let snake_pos = [{x:10,y:10}]
     let snake_head = createElement('div','snake-body')
     document.getElementById('snake').appendChild(snake_head)
@@ -54,7 +54,7 @@ function startGame(){
             if(new_snake_body[i].x==snake_pos[0].x && new_snake_body[i].y==snake_pos[0].y ){
                 
                 console.log('Colllisson')
-                // clearInterval(runtime)
+                clearInterval(runtime)
                 stopGame()
             }
         }
@@ -140,7 +140,7 @@ function startGame(){
 
 }
 function stopGame(){
-    game_started=0
+    
     document.getElementById('end-screen').style.display = 'grid'
     document.getElementById('start-screen').style.display = 'grid'
     document.getElementById('snake').style.display = 'none'
@@ -159,6 +159,12 @@ function stopGame(){
     if (Number(score)>Number(high_score)){
         document.getElementById('high-score').textContent = score
     }
+    score = 0
+    game_started=0
+
+    setTimeout(()=>{
+        console.log('let the for loop take some time')
+    },1000)
 }
 function gameTrigger(){
     if(game_started==0){
