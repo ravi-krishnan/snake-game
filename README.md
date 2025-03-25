@@ -1,3 +1,7 @@
 # Snake Game
 
-A snake game using js+html
+My try at the classic snake game.
+
+## Setup
+
+Open the index.html in any browser
